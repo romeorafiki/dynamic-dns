@@ -2,7 +2,7 @@ import requests
 import json
 
 # Path to JSON file that contains all values
-json_values = json.load(open('C:\\Users\\jasonp\\Documents\\API Keys\\cloudflare-keys.json'))
+json_values = json.load(open('cloudflare-keys.json'))
 
 # Authentication variables and URL
 EMAIL = json_values["email"]
