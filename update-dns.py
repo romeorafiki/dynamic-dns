@@ -2,7 +2,7 @@ import requests
 import json
 
 # Path to JSON file that contains all values
-json_values = json.load(open('cloudflare-keys.json'))
+json_values = json.load(open('~//cloudflare-keys.json'))
 
 # Authentication variables and URL
 EMAIL = json_values["email"]
@@ -47,6 +47,6 @@ data = {
 
 # Publish the record
 response = requests.patch(UPDATE_URL, headers=headers, json=data)
-logfile = open('logs.txt', 'w')
-logfile.write(str(response.json))
+logfile = open('~//logs.txt', 'w')
+logfile.write(str(response.json()))
 logfile.close()
