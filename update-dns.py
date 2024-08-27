@@ -42,7 +42,7 @@ data = {
   "comment": "Dynamic AWS DNS Record",
   "id": DNS_RECORD_ID,
   "tags": [],
-  "ttl": "Auto"
+  "ttl": 1
 }
 
 # Publish the record
