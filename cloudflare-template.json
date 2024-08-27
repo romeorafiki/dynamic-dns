@@ -1,0 +1,6 @@
+{
+    "email": "youremail@yourdomain.com",
+    "api_key": "your very long API key from cloudflare",
+    "zone_id": "your zone ID retrieved from cloudflare",
+    "dns_record": "somerecord.somedomain.com"
+}
