@@ -1,5 +1,6 @@
 import requests
 import json
+import datetime
 
 # Path to JSON file that contains all values
 json_values = json.load(open('..//cloudflare-keys.json'))
@@ -47,6 +48,6 @@ data = {
 
 # Publish the record
 response = requests.patch(UPDATE_URL, headers=headers, json=data)
-logfile = open('..//logs.txt', 'w')
-logfile.write(str(response.json()))
+logfile = open('..//logs.txt', 'a')
+logfile.write(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + str(response.json()))
 logfile.close()
