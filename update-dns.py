@@ -47,3 +47,6 @@ data = {
 
 # Publish the record
 response = requests.patch(UPDATE_URL, headers=headers, json=data)
+logfile = open('logs.txt', 'w')
+logfile.write(str(response.json))
+logfile.close()
